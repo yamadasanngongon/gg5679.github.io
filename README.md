@@ -1,2 +1,1 @@
 # yamadasanngongon.github.io
-gggg
