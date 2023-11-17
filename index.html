@@ -11,17 +11,15 @@
   <!-- Don't use this in production: -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
-
+<div class="confetti"></div>
+<p>            </p><div id="current_date">
+    <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+    </script>
+</div>
 <div id="userName" style="font-family: 'Pattaya';font-size: 26px;">ymd
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png" width="19" height="19" alt="Tích Xanh">
-
-<div class="confetti"></div>
-
-<script type="text/javascript" id="omikuji">
-var items = ['おみくじの結果:大吉', 'おみくじの結果:中吉', 'おみくじの結果:小吉', 'おみくじの結果:凶','おみくじの結果:大凶'];
-
-//最大値は配列の「要素数」にする
-var random = Math.floor( Math.random() * items.length );
-
-console.log( items[random] );
-</script>
