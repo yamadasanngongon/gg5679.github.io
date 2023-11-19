@@ -39,6 +39,22 @@ alert("hello world!");
 <script language="JavaScript" src="https://www.nannichime.net/s.php?d=2023/11/18">
 </script>
 </strong></font><bi>
+<script>
+// テクスチャーを読み込みます。
+const loader = new THREE.TextureLoader();
+const map = loader.load("ttps://1.bp.blogspot.com/-qeArEabBeII/YHDkGGHvO-I/AAAAAAABdkU/"); // 仮
+
+// テクスチャーをあてた球のMeshを作成します。
+const mesh = new THREE.Mesh(
+  // ジオメトリ
+  new THREE.SphereGeometry(2, 20, 20),
+  // マテリアル
+  new THREE.MeshBasicMaterial({ map })
+);
+map.wrapS = map.wrapT = THREE.RepeatWrapping;
+map.offset.x = performance.now() / 1000 / 2;
+map.offset.y = performance.now() / 1000 / 2.5;
+</script>
 <f1>
   履歴
 </f1>
