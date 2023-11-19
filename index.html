@@ -40,5 +40,9 @@ alert("hello world!");
 </script>
 </strong></font>
 <script>
-var useragent = window.navigator.userAgent;
+if(window.navigator.userAgent.match(/(iPhone|iPod|Android.*Mobile)/i)){
+	あなたの端末はスマホですね
+}else{
+ あなたの端末はパソコンまたはタブレットでふね
+}
 </script>
