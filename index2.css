@@ -1,6 +1,7 @@
-.bg_test {
-    height: 690px;              /* 高さ指定 */
-    padding:  20px;             /* 余白指定 */
-    font-size: 20px;            /* 文字サイズ指定 */
-    background-color: #89e4a8;  /* 背景色指定 */
+html {
+	min-height: 100%;
+	background-image: https://i.pinimg.com/originals/d4/bd/bb/d4bdbbe7861583381a84b795e43ba45c.gif;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
