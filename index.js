@@ -1,4 +1,4 @@
-function imgClick() {
+function alertButton(){
   alert("感謝しているサービス
     Claudflare
     github
