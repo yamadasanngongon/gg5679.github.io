@@ -1,4 +1,9 @@
-d46hn {
+body {
    background-image: url('https://i.pinimg.com/originals/d4/bd/bb/d4bdbbe7861583381a84b795e43ba45c.gif');
    background-size: cover;
+   padding: 10px;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
 }
