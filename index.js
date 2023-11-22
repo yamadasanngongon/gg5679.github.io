@@ -1,5 +1,3 @@
-
-
  class Congratulation {
   constructor($elm) {
     this.$area = $elm;
