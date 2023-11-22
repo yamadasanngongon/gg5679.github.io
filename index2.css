@@ -7,14 +7,3 @@ body {
    background-attachment: fixed;
    background-repeat: no-repeat;
 }
-
-header {
-   padding: 30px 4% 10px;
-   position: fixed;
-   top: 0;
-   width: 40%;
-   background-color: #3cb371;
-   display: flex;
-   align-items: center;
-}
- 
