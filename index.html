@@ -19,19 +19,25 @@ alert("hello world!");
 <marquee direction="left" style="background:orange" padding="1px">
 <div id="current_date">
 
-    <script>
+<span id="view_time"></span>
 
-        date = new Date();
+<script>
+document.getElementById("view_time").innerHTML = getNow();
 
-        year = date.getFullYear();
+function getNow() {
+	var now = new Date();
+	var year = now.getFullYear();
+	var mon = now.getMonth()+1; //１を足すこと
+	var day = now.getDate();
+	var hour = now.getHours();
+	var min = now.getMinutes();
+	var sec = now.getSeconds();
 
-        month = date.getMonth() + 1;
-
-        day = date.getDate();
-
-        document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
-
-    </script>
+	//出力用
+	var s = year + "/" + mon + "/" + day + "/" + hour + ":" + min + "" + sec + ":"; 
+	return s;
+}
+</script>
     </marquee>
   
 <img src="https://img3.imepic.jp/image/20231118/380240.png?7fbd60279a0346d5e89ee7a5149ae9fa" style="width:320;height:94.07867494824px;"><br>
