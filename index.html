@@ -15,11 +15,25 @@
 <script>
 alert("hello world!");
 </script>
-<body>
-<script>
-var ua = navigator.userAgent.toLowerCase;
-el.textContent = ua;
-</script>  
+<span id="view_time"></span>
+
+アクセス時間<script type="text/javascript">
+document.getElementById("view_time").innerHTML = getNow();
+
+function getNow() {
+	var now = new Date();
+	var year = now.getFullYear();
+	var mon = now.getMonth()+1; //１を足すこと
+	var day = now.getDate();
+	var hour = now.getHours();
+	var min = now.getMinutes();
+	var sec = now.getSeconds();
+
+	//出力用
+	var s = year + "年" + mon + "月" + day + "日" + hour + "時" + min + "分" + sec + "秒"; 
+	return s;
+}
+</script>
 <img src="https://img3.imepic.jp/image/20231118/380240.png?7fbd60279a0346d5e89ee7a5149ae9fa" style="width:320;height:94.07867494824px;"><br>
 <font size="36">A</font><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png" width="35" height="35" alt="Tích Xanh"></div></string><bi>
 <font color="#FF0000"><strong>サイト開設日から
