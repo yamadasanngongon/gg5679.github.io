@@ -16,8 +16,8 @@
 alert("hello world!");
 </script>
 <body>
-<script type="text/javascript">
-document.getElementById("view_today").innerHTML = getToday();
+<script>
+document.write( 'document.getElementById("view_today").innerHTML = getToday();
 
 function getToday() {
 	var now = new Date();
@@ -31,7 +31,7 @@ function getToday() {
 	//出力用
 	var s = year + "年" + mon + "月" + day + "日 (" + youbi[you] + ")";
 	return s;
-}
+}' ) ;
 </script>
   
 <img src="https://img3.imepic.jp/image/20231118/380240.png?7fbd60279a0346d5e89ee7a5149ae9fa" style="width:320;height:94.07867494824px;"><br>
