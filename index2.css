@@ -7,6 +7,10 @@ body {
    background-attachment: fixed;
    background-repeat: no-repeat;
 }
+
+
+
+
 .confetti {
   position: relative;
   box-shadow: 0 1px 8px rgba(0,0,0,0.2);
@@ -48,14 +52,4 @@ body {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-/****** Base style. ******/
-body {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
 }
