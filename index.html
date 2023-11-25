@@ -40,44 +40,42 @@ alert("hello world!");
 <br><input id="button1" type="button" value="曲を流す" onclick="MusicButton()">
 <script>
 
-var cook;       //cookieデータを格納する変数
-var cStart,cEnd;  //訪問回数部分を切取る為の位置を格納
-var cnt;        //訪問回数を格納
+var cook;
+var cStart,cEnd;
+var cnt;
 
-//cookieが使えるか確認
+var date1,date2;  //日付データを格納する変数
+var kigen = 31;   //cookieの期限（今回は30日）
+
+//現在の日付データを取得
+date1 = new Date();
+
+//30日後の日付データを作成
+date1.setTime(date1.getTime() + kigen*24*60*60*1000);
+
+//GMT形式に変換して変数date2に格納する
+date2 = date1.toGMTString();
+
 if (navigator.cookieEnabled)
 {
-  cook=document.cookie + ";";  //変数cookにcookieデータを入れる
   
-  //変数cStartにカウントデータの最初の位置を入れる
+  cook=document.cookie + ";";
   cStart = cook.indexOf("counts=",0);
   
-  //データの有無で分岐
   if (cStart == -1)
   {
-    //データの無い場合は最初の訪問ということ
     document.write("1回目の訪問です！");
-    
-    //cookieに訪問回数=1を書き込む
-    document.cookie="counts=1;";  
+    document.cookie="counts=1;expires=" + date2;  
   }
   else
   {
-    //カウントデータの最後の部分「;」の位置を取得
     cEnd=cook.indexOf(";",cStart);
-    
-    //数値の部分だけを切り取る
     cnt=cook.substring(cStart+7,cEnd);
-    
-    //数値に変換できない例外が出た時の処理
     try
     {
-      //取得した回数に+1して表示する
       cnt=parseInt(cnt)+1;
       document.write(cnt+"回目の訪問です！");
-      
-      //cookieに訪問回数を書き込む
-      document.cookie="counts="+cnt+";";
+      document.cookie="counts="+cnt+";expires="+ date2;
     }
     catch(e)
     {
@@ -87,12 +85,11 @@ if (navigator.cookieEnabled)
 }
 else
 {
-  //cookieが使用できない時の処理
   document.write("cookieが使用できません。");
 }
 
 </script>
-
+<br><p>上の訪問回数は31日後に削除されます。</p>
 <audio id="曲" preload="auto">
 <source src="https://adesuyo.pages.dev/y2mate.com%20-%20Nightcore%20%20Siren.mp3" type="audio/mp3">
   </audio>
