@@ -38,36 +38,8 @@ alert("hello world!");
 <p>
 <f1>>HTML初心者。jsもcssも初心者 誰か教えてくれ..</f1>
 <bi><input id="button1" type="button" value="曲を流す" onclick="MusicButton()">
-<bi><script type="text/javascript">
-function altRan2() {
-	var r = Math.floor(Math.random(1) * 999) +1; //乱数の発生
-	document.getElemenetById("あなたは多分sai回目の訪問です").innerHTML = r; //値の出力
-}
-</script>
-<bi><span id="view_clock"></span>
 
-<script type="text/javascript">
-timerID = setInterval('clock()',500); //0.5秒毎にclock()を実行
-
-function clock() {
-	document.getElementById("view_clock").innerHTML = getNow();
-}
-
-function getNow() {
-	var now = new Date();
-	var year = now.getFullYear();
-	var mon = now.getMonth()+1; //１を足すこと
-	var day = now.getDate();
-	var hour = now.getHours();
-	var min = now.getMinutes();
-	var sec = now.getSeconds();
-
-	//出力用
-	var s = year + "年" + mon + "月" + day + "日" + hour + "時" + min + "分" + sec + "秒"; 
-	return s;
-}
-</script>⠀
-<audio id="曲" preload="auto">
+<bi><audio id="曲" preload="auto">
 <source src="https://adesuyo.pages.dev/y2mate.com%20-%20Nightcore%20%20Siren.mp3" type="audio/mp3">
   </audio>
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
