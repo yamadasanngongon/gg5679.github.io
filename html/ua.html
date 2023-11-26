@@ -18,19 +18,18 @@
 <p>ユーザーエージェント</p>
 <script>
 <!--
-document.write("navigator.userAgent");
+document.write("window.navigator.userAgent");
 // -->
 </script>
-<p>機種（OS）
-<script>
+<script type="text/javascript">
 <!--
-document.write("window.navigator.platform");
+document.write("使用されている 機種（OS） は " + window.navigator.platform + " です。");
 // -->
 </script>
 <p>ブラウザバージョン</p>
 <script>
 <!--
-document.write("navigator.appVersion");
+document.write("window.navigator.appVersion");
 // -->
 </script>
 <script>
