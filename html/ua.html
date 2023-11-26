@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>:）</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <link rel="stylesheet" href="index2.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+  <!-- Don't use this in production: -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<p>ユーザーエージェント</p>
+<script>
+document.write("navigator.userAgent");
+</script>
+<p>機種（OS）
+<script>
+document.write("window.navigator.platform");
+</script>
+<p>ブラウザバージョン</p>
+<script>
+document.write("navigator.appVersion");
+</script>
+<script>
+const screenWidth = window.screen.width;
+const screenHeight = window.screen.height;
+
+console.log("画面解像度（幅）: " + screenWidth);
+console.log("画面解像度（高さ）: " + screenHeight);
+</script>
