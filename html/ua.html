@@ -21,7 +21,7 @@
 document.write(". " + navigator.userAgent + " .");
 // -->
   </script>
-<script>
+<br><script>
 <!--
 const screenWidth = window.screen.width;
 const screenHeight = window.screen.height;
@@ -29,4 +29,9 @@ const screenHeight = window.screen.height;
 document.write("画面解像度（幅）: " + screenWidth);
 document.write("画面解像度（高さ）: " + screenHeight);
 // -->
+</script>
+<br><script>
+fetch('https://api.ipify.org?format=json')
+  .then(response => response.json())
+  .then(data => document.write("IPアドレス: " + data.ip));
 </script>
