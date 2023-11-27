@@ -30,17 +30,10 @@ document.write("画面解像度（幅）: " + screenWidth);
 document.write("画面解像度（高さ）: " + screenHeight);
 // -->
 </script>
-
-
-
-
-
-
-
-
----------
 <br><script>
-fetch('https://api.ipify.org?format=json')
-  .then(response => response.json())
-  .then(data => document.write("IPアドレス: " + data.ip));
+const browserName = navigator.appName;
+const browserVersion = navigator.appVersion;
+
+document.write("ブラウザ名: " + browserName);
+document.write("ブラウザバージョン: " + browserVersion);
 </script>
