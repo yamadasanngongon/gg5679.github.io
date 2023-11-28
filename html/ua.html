@@ -33,7 +33,10 @@ document.write("画面解像度（高さ）: " + window.screen.height);
 // -->
 </script>
 <br><script>
-const browserName = navigator.appName;
+const browserInfo = navigator.userAgent.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+const browserName = browserInfo[1];
+const browserVersion = browserInfo[2];
 
 document.write("ブラウザ名: " + browserName);
+document.write("\nブラウザバージョン: " + browserVersion)
 </script>
