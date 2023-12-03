@@ -19,8 +19,12 @@ body {
 }
 
 h1 {
-    /*  @font-face{}は、あくまで使用できるフォントを追加するのみ。
-　　　　　そのフォントを使いたい要素で定義することで、利用することができる　　*/
-    font-family: "からかぜ";
-    font-size: 30px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:0;
+    margin:0;
+    font-size:30px;
+    color: red;
 }
