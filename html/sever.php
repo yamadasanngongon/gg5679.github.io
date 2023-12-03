@@ -6,5 +6,5 @@
     <title>get_post_sample</title>
 </head>
 <?php
-	echo "ワンツーマンレッスンと言えば「".$_POST["data"] ."」です。";
+	echo "あ「".$_POST["data"] ."」です。";
 ?>
