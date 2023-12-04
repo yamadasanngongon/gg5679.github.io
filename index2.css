@@ -18,7 +18,7 @@ body {
     src: url(karakaze-R.otf);
 }
 
-h1 {
+p {
     position: absolute;
     top:50%;
     left:50%;
